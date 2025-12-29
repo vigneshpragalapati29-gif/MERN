@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selector Forms</title>
+        <style>
+            body{
+                background-color: #f2f6ff;
+            }
+            p{
+                color: blue;
+            }
+            #main-title{
+                color: darkred;
+                text-align: center;
+            }
+            .highlight{
+                background-color: lightyellow;
+            }
+            h2, h3{
+                color: green;
+            }
+            *{
+                font-family: Arial, sans-serif;
+            }
+            div p{
+                font-style: italic;
+            }
+            div > span{
+                color: purple;
+                font-weight: bold;
+            }
+            h3 + p{
+                color: orange;
+            }
+            h3 ~ p{
+                background-color: #e0e0e0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main-title">CSS Selector Demonstration</h1>
+        <h2>Simple Selectors</h2>
+        <p>This paragraph uses Element Selector.</p>
+        <p class="highlight">This paragraph uses Class Selector.</p>
+
+        <h3>Group Selector Example</h3>
+        <div>
+            <p>Descendant Selector applied here</p>
+            <span>Child Selector applied here</span>
+        </div>
+
+        <h2>Combinator Selectors</h2>
+
+        <h3>Adjacent Sibling and General Sibling Selectors</h3>
+        <p>This paragraph is adjacent sliding</p>
+        <p>This paragraph is general sibling</p>
+        <p>This paragraph is also general sibling</p>
+    </body>
+</html>
